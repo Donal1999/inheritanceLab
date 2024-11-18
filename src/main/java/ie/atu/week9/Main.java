@@ -6,7 +6,7 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        /*Scanner scan = new Scanner(System.in);
         System.out.println("please enter your name");
         String name = scan.nextLine();
         System.out.println("please enter your address");
@@ -16,9 +16,21 @@ public class Main {
         System.out.println("please enter your customer number");
         String custNumber = scan.nextLine();
         System.out.println("Do you want mailing list");
-        boolean list = scan. hasNextBoolean();
-        Customer newCust = new Customer(name, address, phone, custNumber , list);
-        System.out.println("you entered " + newCust.toString());
+        boolean list = scan. hasNextBoolean();*/
+
+        PreferredCustomer preferredCustomer = new PreferredCustomer();
+        preferredCustomer.setName("Donal");
+        preferredCustomer.setAddress("ATU");
+        preferredCustomer.setPhone("08723243");
+        preferredCustomer.setCustNumber("1002");
+        preferredCustomer.setMailingList(false);
+        preferredCustomer.setLoyaltyPoints(700);
+        preferredCustomer.setDiscount();
+        System.out.println(preferredCustomer);// calls preferred customer class displays info
+
+
+
+
 
         }
     }
